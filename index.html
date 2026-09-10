@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<title>《幸福快樂的日子》東京影展 2026 參展指南</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#FAF9F5">
+<meta name="robots" content="noindex, nofollow">
+<style>
+/* 固定淺色主題：所有裝置一致，不跟隨系統設定 */
+:root{
+  --paper:#FAF9F5;
+  --card:#FFFFFF;
+  --ink:#23272B;
+  --muted:#7A8088;
+  --line:#E7E5DE;
+  --accent:#D6122B;
+  --accent-ink:#AF0E22;
+  --accent-soft:#FCE8EB;
+  --ok:#00B368;      --ok-soft:#DFF7EA;
+  --wait:#E09E00;    --wait-soft:#FFF2CE;
+  --info:#3D7BF5;    --info-soft:#E7EFFF;
+  --pr:#8A5CF5;      --pr-soft:#F0EAFF;
+  --urgent:#F02D68;  --urgent-soft:#FFE4EC;
+  --sans:"PingFang TC","Hiragino Sans TC","Noto Sans TC","Microsoft JhengHei",system-ui,sans-serif;
+  --mono:var(--sans);
+  --serif:var(--sans);
+}
+:root{color-scheme:light}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} *{transition:none !important} }
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:var(--sans); line-height:1.7; font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:900px; margin:0 auto; padding:0 20px 80px}
+
+/* ---------- hero ---------- */
+.hero{padding:36px 0 26px; border-bottom:4px solid var(--ink)}
+.eyebrow{
+  display:inline-block; letter-spacing:.14em; font-size:12.5px; font-weight:700;
+  color:var(--accent); text-transform:uppercase; margin-bottom:14px;
+}
+h1{font-size:clamp(34px,6vw,52px); line-height:1.15; margin:0 0 6px; font-weight:800; letter-spacing:.01em; text-wrap:balance}
+.hero .en{font-family:var(--sans); font-size:clamp(17px,2.6vw,22px); color:var(--muted); margin:0 0 18px}
+.hero .en b{color:var(--accent); font-style:normal; font-weight:700}
+.facts{display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:10px; margin-top:2px}
+.fact{background:var(--card); border:1px solid var(--line); border-radius:10px; padding:10px 14px}
+.fact .k{font-size:11.5px; letter-spacing:.12em; color:var(--muted); text-transform:uppercase}
+.fact .v{font-weight:700; font-variant-numeric:tabular-nums}
+
+/* ---------- alert ---------- */
+.alert{
+  margin:16px 0 0; padding:14px 18px; border-left:4px solid var(--urgent);
+  background:var(--urgent-soft); border-radius:0 6px 6px 0;
+}
+.alert b{color:var(--urgent)}
+.alert #status-title{display:block; margin-bottom:6px; font-size:16px}
+.alert ol,.alert ul{margin:6px 0 8px; padding-left:22px}
+.alert li{margin:3px 0}
+.alert .srcrow{display:block; margin-top:6px}
+.alert .small{font-size:13.5px; line-height:1.65; color:var(--muted); margin-top:4px}
+
+/* ---------- nav ---------- */
+nav{
+  position:fixed; top:0; left:0; right:0; z-index:10; background:var(--paper);
+  border-bottom:1px solid var(--line);
+  padding:0 max(20px, calc((100% - 900px)/2 + 20px));
+  display:flex; align-items:center; white-space:nowrap;
+}
+.navlinks{
+  display:flex; gap:4px; flex:1 1 auto; min-width:0;
+  overflow-x:auto; -webkit-overflow-scrolling:touch; scrollbar-width:none;
+}
+.navlinks::-webkit-scrollbar{display:none}
+.menubtn{
+  display:none; align-items:center; gap:6px; background:var(--card); color:var(--ink);
+  border:1px solid var(--line); border-radius:8px; padding:7px 12px; font-size:14px;
+  font-weight:700; font-family:var(--sans); cursor:pointer; flex:none;
+}
+.menubtn:focus-visible{outline:2px solid var(--accent); outline-offset:-1px}
+nav.menu-open .menubtn{color:var(--accent); border-color:var(--accent)}
+body{padding-top:var(--navh,48px)}
+section,header.hero{scroll-margin-top:calc(var(--navh,48px) + 8px)}
+@media (max-width:640px){
+  nav{padding:6px 10px; gap:8px}
+  .menubtn{display:inline-flex}
+  .navlinks{
+    display:none; position:fixed; top:var(--navh,52px); left:0; right:0;
+    flex-direction:column; gap:0; background:var(--card);
+    border-bottom:1px solid var(--line); box-shadow:0 14px 30px rgba(35,39,43,.14);
+    max-height:70vh; overflow:auto;
+  }
+  nav.menu-open .navlinks{display:flex}
+  .navlinks a{padding:13px 18px; font-size:15px; border-bottom:1px solid var(--line)}
+  .navlinks a:last-child{border-bottom:none}
+  .searchwrap{flex:1 1 auto; margin-left:0; padding:0}
+  .searchwrap input{width:100%}
+  body{padding-top:56px}
+}
+nav a{
+  display:block; padding:12px 12px; color:var(--muted); text-decoration:none;
+  font-size:14px; font-weight:600; border-bottom:3px solid transparent;
+}
+nav a:hover,nav a:focus-visible{color:var(--accent); border-bottom-color:var(--accent); outline:none}
+
+/* ---------- legend ---------- */
+.legend{display:flex; flex-wrap:wrap; gap:8px 16px; margin:14px 0 0; font-size:13.5px; color:var(--muted); align-items:center}
+.chip{
+  display:inline-block; padding:1px 9px; border-radius:99px; font-size:12px; font-weight:700;
+  vertical-align:1px; white-space:nowrap;
+}
+.chip.doc{background:var(--ok-soft); color:var(--ok)}
+.chip.ask{background:var(--wait-soft); color:var(--wait)}
+.chip.bg{background:var(--info-soft); color:var(--info)}
+.chip.hot{background:var(--urgent-soft); color:var(--urgent)}
+
+.owners{display:flex; justify-content:flex-end; gap:4px; align-items:center; white-space:nowrap}
+.owner{font-size:12px; white-space:nowrap}
+.owner.marketing{color:var(--accent); background:var(--accent-soft)}
+.owner.pr{color:var(--pr); background:var(--pr-soft)}
+.owner.producer{color:var(--info); background:var(--info-soft)}
+.owner.social{color:var(--ok); background:var(--ok-soft)}
+.owner.director{color:var(--wait); background:var(--wait-soft)}
+.owner.all{color:var(--ink); background:var(--line)}
+
+/* ---------- sections ---------- */
+section{padding-top:48px}
+h2{
+  font-size:24px; line-height:1.3; margin:0 0 6px; font-weight:800; letter-spacing:.01em;
+  display:flex; align-items:baseline; gap:12px;
+}
+h2 .no{font-family:var(--mono); font-size:24px; font-weight:800; color:var(--accent); letter-spacing:0; font-variant-numeric:tabular-nums}
+.sub{color:var(--muted); font-size:14px; line-height:1.65; margin:0 0 18px}
+
+/* ---------- timeline ---------- */
+.tl{list-style:none; margin:0; padding:0; border-top:1px solid var(--line)}
+.tl li{
+  display:grid; grid-template-columns:118px 1fr auto; gap:6px 16px; align-items:baseline;
+  padding:10px 4px; border-bottom:1px solid var(--line);
+}
+.tl .d{font-family:var(--mono); font-size:13.5px; color:var(--muted); font-variant-numeric:tabular-nums}
+.tl .t{font-size:15px; line-height:1.65}
+.tl .t small{display:block; color:var(--muted); font-size:13.5px; line-height:1.6}
+.tl li.done .t,.tl li.done .d{text-decoration:line-through; opacity:.55}
+.tl li.hot{background:var(--urgent-soft)}
+.tl li.hot .d{color:var(--urgent); font-weight:700}
+.tl input[type=checkbox]{accent-color:var(--accent); width:16px; height:16px; margin-right:10px; vertical-align:-2px}
+@media (max-width:560px){
+  .tl li{grid-template-columns:1fr auto; gap:3px 10px; padding:9px 2px; align-items:center}
+  .tl .d{grid-row:1; grid-column:1}
+  .owners{grid-row:1; grid-column:2; justify-content:flex-end; margin:0}
+  .tl .t{grid-column:1 / -1; line-height:1.6}
+  .tl .t .src{font-size:11px; padding:0 6px; margin-left:4px}
+  .tl .t small{margin:2px 0 0 26px}
+}
+
+/* ---------- schedule table ---------- */
+.tblwrap{overflow-x:auto; border:1px solid var(--line); border-radius:8px; background:var(--card)}
+.tshell{position:relative}
+.tshell::before,.tshell::after{
+  content:""; position:absolute; top:1px; bottom:1px; width:30px; z-index:2;
+  pointer-events:none; opacity:0; transition:opacity .25s;
+}
+.tshell::after{right:1px; border-radius:0 8px 8px 0; background:linear-gradient(to left, rgba(35,39,43,.16), transparent)}
+.tshell::before{left:1px; border-radius:8px 0 0 8px; background:linear-gradient(to right, rgba(35,39,43,.16), transparent)}
+.tshell.more-right::after{opacity:1}
+.tshell.more-left::before{opacity:1}
+.scrollhint{
+  position:absolute; right:10px; top:50%; z-index:3; pointer-events:none;
+  background:var(--accent); color:#FFFFFF; font-size:12px; font-weight:700;
+  padding:4px 12px; border-radius:99px; box-shadow:0 2px 12px rgba(214,18,43,.35);
+  animation:hintnudge 1.4s ease-in-out infinite; white-space:nowrap;
+}
+@keyframes hintnudge{0%,100%{transform:translate(0,-50%)}50%{transform:translate(-7px,-50%)}}
+@media (prefers-reduced-motion: reduce){.scrollhint{animation:none; transform:translateY(-50%)}}
+table{border-collapse:collapse; width:100%; min-width:620px; font-size:14.5px}
+th{
+  text-align:left; font-size:12px; letter-spacing:.1em; text-transform:uppercase;
+  color:var(--muted); padding:10px 14px; border-bottom:2px solid var(--line); font-weight:700;
+}
+td{padding:10px 14px; border-bottom:1px solid var(--line); vertical-align:top; line-height:1.6}
+tr:last-child td{border-bottom:none}
+td.num,.mono{font-family:var(--mono); font-variant-numeric:tabular-nums; font-size:13.5px}
+tr.key{background:var(--accent-soft)}
+tr.key td:first-child{border-left:3px solid var(--accent)}
+tr.grp td{background:var(--paper); font-weight:700; font-size:13px; color:var(--accent-ink)}
+
+/* ---------- accordion ---------- */
+details{
+  background:var(--card); border:1px solid var(--line); border-radius:10px;
+  margin:0 0 12px; overflow:hidden;
+}
+details[open]{border-color:var(--accent)}
+summary{
+  cursor:pointer; padding:16px 18px; font-weight:700; font-size:17px;
+  display:flex; align-items:center; gap:12px; list-style:none;
+}
+summary::-webkit-details-marker{display:none}
+summary:focus-visible{outline:2px solid var(--accent); outline-offset:-2px}
+summary .qn{
+  font-family:var(--mono); font-size:12.5px; color:var(--accent); flex:none;
+  border:1px solid var(--accent); border-radius:99px; padding:1px 8px;
+}
+summary .arrow{margin-left:auto; color:var(--muted); transition:transform .15s; flex:none}
+details[open] summary .arrow{transform:rotate(90deg)}
+.body{padding:2px 20px 18px; border-top:1px solid var(--line); font-size:15px; line-height:1.7}
+.body h4{margin:18px 0 8px; font-size:15px; letter-spacing:.04em; color:var(--accent-ink)}
+.body ul{margin:6px 0 12px; padding-left:20px}
+.body li{margin:5px 0}
+.body li small,.body p small{color:var(--muted)}
+.body p{margin:10px 0}
+.note{
+  background:var(--info-soft); border-radius:8px; padding:10px 14px; font-size:13.5px;
+  line-height:1.65; color:var(--muted); margin:12px 0 4px;
+}
+.note b{color:var(--info)}
+.callout{
+  background:var(--accent-soft); border-radius:8px; padding:10px 14px; font-size:14px; margin:12px 0 4px;
+}
+.grid2{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:10px 0}
+@media (max-width:640px){ .grid2{grid-template-columns:1fr} }
+.panel{border:1px solid var(--line); border-radius:8px; padding:12px 16px; background:var(--paper)}
+.panel h5{margin:0 0 8px; font-size:15px}
+.panel ul{margin:0; padding-left:18px; font-size:14.5px; line-height:1.65}
+.panel li{margin:4px 0}
+
+/* ---------- contact ---------- */
+.contact td:first-child{font-weight:600; white-space:nowrap}
+a{color:var(--accent-ink)}
+
+footer{margin-top:56px; padding-top:18px; border-top:1px solid var(--line); font-size:13px; color:var(--muted)}
+
+/* ---------- citations ---------- */
+.src{
+  display:inline-block; font-size:11.5px; color:var(--muted); text-decoration:none;
+  border:1px solid var(--line); border-radius:99px; padding:0 8px; margin-left:6px;
+  white-space:nowrap; vertical-align:1px;
+}
+.src:hover,.src:focus-visible{color:var(--accent); border-color:var(--accent); outline:none}
+[id]{scroll-margin-top:calc(var(--navh,48px) + 10px)}
+.flash{animation:flashbg 1.8s ease-out 1}
+@keyframes flashbg{0%,55%{background:var(--wait-soft)}100%{background:transparent}}
+@media (prefers-reduced-motion: reduce){.flash{animation:none; background:var(--wait-soft)}}
+
+/* ---------- document library ---------- */
+.docpage{border-top:1px dashed var(--line); padding:12px 0 4px; font-size:14px}
+.docpage:first-of-type{border-top:none}
+.pgno{font-size:11.5px; letter-spacing:.12em; color:var(--accent); font-weight:700; margin:4px 0 6px}
+.docpage p{margin:8px 0}
+.docpage a{overflow-wrap:anywhere; word-break:break-word}
+.docpage ul{margin:6px 0 10px; padding-left:20px}
+.docpage li{margin:3px 0}
+.docmeta{font-size:12.5px; color:var(--muted); font-weight:400; margin-left:auto; padding-right:10px}
+summary .docmeta{flex:none}
+@media (max-width:640px){
+  .doc summary{flex-wrap:wrap; gap:2px 8px; padding:14px 16px}
+  .doc summary .docmeta{flex-basis:100%; order:3; margin:0; padding:0; font-size:11.5px}
+}
+
+/* ---------- search ---------- */
+.searchwrap{margin-left:auto; display:flex; align-items:center; padding:6px 0 6px 10px}
+.searchwrap input{
+  width:190px; font-size:16px; padding:4px 12px; border:1px solid var(--line);
+  border-radius:99px; background:var(--card); color:var(--ink); font-family:var(--sans);
+}
+.searchwrap input:focus{outline:2px solid var(--accent); outline-offset:-1px}
+@media (max-width:640px){
+  .searchwrap{width:100%; padding:2px 0 8px}
+  .searchwrap input{width:100%}
+}
+#results{
+  position:fixed; top:var(--navh,48px); left:0; right:0; z-index:9; display:none;
+  background:var(--card); border-bottom:2px solid var(--accent);
+  box-shadow:0 12px 28px rgba(35,39,43,.12); max-height:62vh; overflow:auto;
+  padding:4px max(20px, calc((100% - 900px)/2 + 20px)) 8px;
+}
+#results.on{display:block}
+#results .rescount{font-size:12px; color:var(--muted); padding:8px 8px 2px}
+.res{
+  display:block; width:100%; text-align:left; background:none; border:none; cursor:pointer;
+  padding:10px 8px; border-bottom:1px solid var(--line); font-size:14px; color:var(--ink);
+  font-family:var(--sans); line-height:1.6;
+}
+.res:last-child{border-bottom:none}
+.res:hover,.res:focus-visible{background:var(--paper); outline:none}
+.res .where{font-size:11.5px; color:var(--accent); font-weight:700; letter-spacing:.05em; margin-bottom:2px}
+.res mark{background:var(--wait-soft); color:inherit; padding:0 1px}
+
+/* ---------- copy toast ---------- */
+#toast{
+  position:fixed; left:50%; bottom:28px; transform:translateX(-50%) translateY(20px);
+  background:var(--ink); color:var(--paper); font-size:14px; font-weight:600;
+  padding:10px 20px; border-radius:99px; opacity:0; pointer-events:none;
+  transition:opacity .2s, transform .2s; z-index:20; max-width:90vw;
+}
+#toast.on{opacity:1; transform:translateX(-50%) translateY(0)}
+a[href^="mailto:"]{cursor:copy}
+.copycode{
+  font-family:var(--mono); font-weight:700; font-size:13.5px; color:var(--ink);
+  background:var(--wait-soft); border:1px dashed var(--wait); border-radius:6px;
+  padding:2px 10px; cursor:copy; display:inline-block;
+}
+.copycode:hover,.copycode:focus-visible{border-style:solid; outline:none}
+.gobtn{
+  display:inline-block; background:var(--accent); color:#FFFFFF; font-weight:700;
+  font-size:13.5px; padding:6px 16px; border-radius:99px; text-decoration:none;
+  margin:2px 8px 2px 0;
+}
+.gobtn:hover,.gobtn:focus-visible{background:var(--accent-ink); outline:none}
+/* ---------- mobile spacing tighten ---------- */
+@media (max-width:640px){
+  .hero{padding:16px 0 18px}
+  .eyebrow{margin-bottom:8px; font-size:11.5px}
+  h1{margin-bottom:4px}
+  .hero .en{margin-bottom:12px}
+  .facts{grid-template-columns:1fr 1fr; gap:8px}
+  .fact{padding:8px 12px}
+  .fact:last-child{grid-column:1 / -1}
+  .alert{margin-top:14px; padding:12px 14px}
+  .legend{margin-top:12px; gap:6px 14px}
+  section{padding-top:32px}
+  .sub{margin-bottom:12px}
+  h2{margin-bottom:2px}
+  .wrap{padding-bottom:48px}
+  footer{margin-top:36px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <span class="eyebrow">第 39 屆東京國際影展 · World Focus 單元</span>
+  <h1>幸福快樂的日子<br>東京影展 2026 參展指南</h1>
+  <p class="en">Happily Ever After · 39th Tokyo International Film Festival</p>
+  <div class="facts">
+    <div class="fact"><div class="k">影展日期</div><div class="v">2026.10.26 – 11.4</div></div>
+    <div class="fact"><div class="k">入選單元</div><div class="v">World Focus<br><small>9/9 邀請信主旨載明</small></div></div>
+    <div class="fact"><div class="k">大會招待</div><div class="v">導演＋一位主演<br><small>來回經濟艙機票、4 晚住宿、機場接送</small></div></div>
+    <div class="fact"><div class="k">首要期限</div><div class="v">9/13 回覆檔期限制<br><small>東京時間，台灣同日</small></div></div>
+    <div class="fact"><div class="k">住宿</div><div class="v">The Royal Park Hotel Ginza 6-chome<br><small>步行 10–15 分鐘到會場</small></div></div>
+    <div class="fact"><div class="k">大會窗口</div><div class="v">來賓 Yoko Kiriishi<br><small>素材 Kumiko Yasuda</small></div></div>
+  </div>
+
+  <div class="alert" id="status-alert">
+    <b id="status-title">目前進度：大會 9/9 正式邀請導演阮鳳儀與一位主演（葉舒華或陳璇，由我方擇一）出席，兩人的機票、4 晚住宿與機場接送由大會負擔；<b>9/13（日）前</b>要回覆檔期限制，並提供可到場日期、出發機場與護照影本。林翰 9/10 回信把來賓資料交給 Anli、公關媒體交給 Leo，實質資料尚未回覆。</b><span id="status-copy">未決事項一律看 <a href="#asks">05 待確認清單</a>；誰負責看 <a href="#roles">06 角色分工</a>；招待條件看 <a href="#invite">02 邀請與招待條件</a>。</span><span class="srcrow"><a class="src" href="#doc-email-e1">出處：✉1</a></span>
+    <div class="small" id="status-detail"><span class="chip bg">補充背景</span> 大會期限未註明時區，保守以東京時間計（快台灣 1 小時）。</div>
+  </div>
+
+  <div class="legend">
+    <span>本頁資訊分兩級：</span>
+    <span><span class="chip doc">文件明載</span> 大會信件白紙黑字</span>
+    <span><span class="chip bg">補充背景</span> 非大會文件，供參考、建議查證</span>
+  </div>
+</header>
+
+<nav>
+  <button class="menubtn" id="menubtn" type="button" aria-expanded="false" aria-controls="navlinks">☰ 選單</button>
+  <div class="navlinks" id="navlinks">
+    <a href="#timeline">時程</a>
+    <a href="#invite">邀請條件</a>
+    <a href="#form">問卷與證件</a>
+    <a href="#operations">全團行程</a>
+    <a href="#asks">待確認</a>
+    <a href="#roles">分工</a>
+    <a href="#contacts">窗口</a>
+    <a href="#docs">原文文件</a>
+  </div>
+  <div class="searchwrap"><input id="q" type="search" placeholder="搜尋指南＋原文文件…" aria-label="全站搜尋"></div>
+</nav>
+<div id="results" role="listbox"></div>
+
+<section id="timeline">
+  <h2><span class="no">01</span>關鍵時程</h2>
+  <p class="sub">照日期排。未決事項見<a href="#asks">05 待確認清單</a>。勾選進度只存在自己的裝置，不會同步給其他人。</p>
+  <ul class="tl">
+    <li data-date="2026-09-09" data-k="tk1" class="done-fact"><span class="d">9/9（三）✓</span><span class="t"><label><input type="checkbox">大會素材窗口 Kumiko Yasuda 來信：DCP 等素材準備中，介紹來賓招待窗口 Yoko Kiriishi 接手旅行安排</label><a class="src" href="#doc-email-e1">出處：信件 ✉1</a></span><span class="owners"><span class="chip owner producer">製片</span></span></li>
+    <li data-date="2026-09-09" data-k="tk2" class="done-fact"><span class="d">9/9（三）✓</span><span class="t"><label><input type="checkbox">Yoko 來信<b>正式邀請導演與一位主演</b>，列出招待條件、要交的資料與 9/13 期限</label><a class="src" href="#doc-email-e1">出處：信件 ✉1</a><small>條件見<a href="#invite">02 邀請與招待條件</a>。</small></span><span class="owners"><span class="chip owner producer">製片</span><span class="chip owner marketing">行銷</span></span></li>
+    <li data-date="2026-09-10" data-k="tk3" class="done-fact"><span class="d">9/10（四）✓</span><span class="t"><label><input type="checkbox">林翰回信：介紹 Anli（來賓資料）與 Leo（公關媒體）為對口，答案後續補上</label><a class="src" href="#doc-email-e1">出處：信件 ✉1</a></span><span class="owners"><span class="chip owner producer">製片</span></span></li>
+    <li data-date="2026-09-13" data-k="tk4" class="hot"><span class="d">9/13（日）</span><span class="t"><label><input type="checkbox"><b>回覆大會檔期限制的期限</b>（東京時間，台灣同日）；同一封一併回主演人選、可到場日期、出發機場與護照影本</label><a class="src" href="#doc-email-e1">出處：信件 ✉1</a><small>逐項見<a href="#asks">05 待確認清單</a>。</small></span><span class="owners"><span class="chip owner marketing">行銷</span></span></li>
+    <li data-date="2026-09-15" data-k="tk5"><span class="d">9 月中</span><span class="t"><label><input type="checkbox">大會確定最終放映場次</label><a class="src" href="#doc-email-e1">出處：信件 ✉1</a></span><span class="owners"><span class="chip owner all">全員</span></span></li>
+    <li data-date="2026-10-26" data-k="tk6"><span class="d">10/26（一）</span><span class="t"><label><input type="checkbox">第 39 屆東京影展開幕；<b>紅毯與開幕典禮</b>，大會列為選擇性活動，紅毯只在開幕典禮舉行</label><a class="src" href="#doc-email-e1">出處：信件 ✉1</a></span><span class="owners"><span class="chip owner marketing">行銷</span></span></li>
+    <li data-date="2026-10-26" data-k="tk7"><span class="d">10/26 – 11/4<br>場次未定</span><span class="t"><label><input type="checkbox"><b>三場正式放映，其中一場映後 Q&amp;A</b>，大會希望導演與演員都出席 Q&amp;A；場次依我方行程安排，9 月中定案</label><a class="src" href="#doc-email-e1">出處：信件 ✉1</a></span><span class="owners"><span class="chip owner all">全員</span></span></li>
+    <li data-date="2026-10-28" data-k="tk8"><span class="d">10/28 – 10/30</span><span class="t"><label><input type="checkbox">TIFFCOM 市場展</label><a class="src" href="#doc-email-e1">出處：信件 ✉1</a></span><span class="owners"><span class="chip owner producer">製片</span></span></li>
+    <li data-date="2026-10-29" data-k="tk9"><span class="d">10/29（四）晚間</span><span class="t"><label><input type="checkbox">TIFFCOM「Taiwan Night」，大會歡迎團隊出席，視行程而定</label><a class="src" href="#doc-email-e1">出處：信件 ✉1</a></span><span class="owners"><span class="chip owner marketing">行銷</span><span class="chip owner producer">製片</span></span></li>
+    <li data-date="2026-11-04" data-k="tk10"><span class="d">11/4（三）</span><span class="t"><label><input type="checkbox">會期結束</label><a class="src" href="#doc-email-e1">出處：信件 ✉1</a></span><span class="owners"><span class="chip owner all">全員</span></span></li>
+  </ul>
+</section>
+
+<section id="invite">
+  <h2><span class="no">02</span>邀請與招待條件</h2>
+  <p class="sub">大會來賓招待窗口 Yoko Kiriishi 9/9 信件白紙黑字的條件。<span class="chip doc">文件明載</span><a class="src" href="#doc-email-e1">出處：信件 ✉1</a></p>
+  <div class="tblwrap">
+    <table>
+      <thead><tr><th>項目</th><th>大會說的</th><th>備註</th></tr></thead>
+      <tbody>
+        <tr class="key"><td>受邀人</td><td>導演 Feng-i Fiona Roan＋<b>一位主演</b></td><td>主演由我方在葉舒華、陳璇之間選一位告知大會</td></tr>
+        <tr><td>機票</td><td>兩人各一張<b>來回經濟艙</b></td><td>出發機場要由我方提供</td></tr>
+        <tr><td>住宿</td><td>兩人各 <b>4 晚</b></td><td><a href="https://www.royalparkhotels.co.jp/en/the/ginza6/" target="_blank" rel="noopener">The Royal Park Hotel Ginza 6-chome</a>，標準雙人房，大會註明房型可能變動；步行 10–15 分鐘到會場</td></tr>
+        <tr><td>接送</td><td>兩人各有機場接送</td><td></td></tr>
+        <tr class="key"><td>官方活動</td><td><b>三場正式放映，其中一場映後 Q&amp;A</b></td><td>大會希望導演與演員都出席 Q&amp;A；場次依我方行程安排，9 月中定案</td></tr>
+        <tr><td>TIFFCOM「Taiwan Night」</td><td><b>10/29 晚間</b></td><td><a href="https://tiffcom.jp/en/" target="_blank" rel="noopener">TIFFCOM</a> 市場展 10/28–30；大會歡迎團隊出席，視行程而定</td></tr>
+        <tr><td>選擇性活動</td><td>10/26 紅毯與開幕典禮</td><td>紅毯只在開幕典禮舉行</td></tr>
+        <tr><td>肖像授權</td><td>參加即同意大會使用影像與錄音</td><td>用途：大會官網、線上串流、各種宣傳媒體、會場螢幕與看板，以及日後的影展宣傳</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="note"><b>大會信中沒有提到的：</b>第二位主演若同行的條件、隨行團隊（經紀人、造型、公關）的住宿與接送、口譯與 Q&amp;A 語言、證件費用以外的其他費用。<span class="chip bg">補充背景</span>招待條件三個影展各自不同，不要拿多倫多或釜山的條件推算東京。</p>
+</section>
+
+<section id="form">
+  <h2><span class="no">03</span>問卷與證件</h2>
+  <p class="sub">大會發 Guest ID 證件的前置作業。<a class="src" href="#doc-email-e1">出處：信件 ✉1</a></p>
+  <div class="callout"><b>直接開啟：</b><a class="gobtn" href="https://forms.gle/PgS4LEZubrtpMRD87" target="_blank" rel="noopener">開啟大會問卷（Google 表單）</a><span class="chip doc">文件明載</span></div>
+  <ul>
+    <li>問卷主要給受邀的導演與演員填，大會憑它核發 Guest ID 證件</li>
+    <li>每團最多 <b>8 張</b>證件免費；<b>第 9 張起每張 6,000 日圓</b>（大會換算約 38 美元）</li>
+    <li>填寫狀態未載；「未載」＝目前沒有任何書面資料</li>
+  </ul>
+</section>
+
+<section id="operations">
+  <h2><span class="no">04</span>全團行程一覽</h2>
+  <p class="sub">目前只有導演與一位主演的招待條件成立，其餘人員未載；「未載」＝目前沒有任何書面資料。</p>
+  <div class="tblwrap">
+    <table>
+      <thead><tr><th>人員／組別</th><th>目前書面事實</th><th>下一個觸發點</th></tr></thead>
+      <tbody>
+        <tr><td><b>阮鳳儀</b><br><small>導演</small></td><td>大會 9/9 邀請：來回經濟艙機票、4 晚住宿、機場接送；到場日期、出發機場、護照影本尚未提供</td><td><b>9/13 前回覆</b>，逐項見<a href="#asks">待確認清單</a><a class="src" href="#doc-email-e1">✉1</a></td></tr>
+        <tr><td><b>葉舒華／陳璇</b><br><small>主演</small></td><td>大會只招待一位，請我方選一位；條件與導演相同</td><td><b>我方決定人選並回覆</b>，見<a href="#asks">待確認清單</a><a class="src" href="#doc-email-e1">✉1</a></td></tr>
+        <tr><td><b>其他卡司與隨行團隊</b></td><td>未載</td><td>證件每團 8 張免費，見<a href="#form">03 問卷與證件</a></td></tr>
+        <tr><td><b>林翰、Clifford</b><br><small>製片</small></td><td>出席未載；林翰為大會信件第一收件人</td><td></td></tr>
+        <tr><td><b>Anli、Leo</b><br><small>行銷／公關</small></td><td>出席未載；9/10 起 Anli 為來賓資料對口、Leo 為公關媒體對口</td><td>9/13 前由 Anli 回覆大會</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="asks">
+  <h2><span class="no">05</span>待確認清單</h2>
+  <p class="sub">目前全部在我方這邊：大會 9/9 提問，林翰 9/10 只回覆了對口人選，實質答案一項都還沒回。</p>
+  <div class="grid2">
+    <div class="panel">
+      <h5>我方要回覆大會：9/13（日）前</h5>
+      <ul>
+        <li><b>選哪一位主演受邀</b>：大會問「which actor, Shuhua Yeh or Xuan Chen, should be invited」，只招待一位<span class="chip doc">文件明載</span><a class="src" href="#doc-email-e1">✉1</a></li>
+        <li><b>導演與主演在 10/26–11/4 的可到場日期與檔期限制</b>：大會 9/13 前要知道，放映場次 9 月中依此定案<span class="chip doc">文件明載</span><a class="src" href="#doc-email-e1">✉1</a></li>
+        <li><b>兩人的出發機場</b><span class="chip doc">文件明載</span><a class="src" href="#doc-email-e1">✉1</a></li>
+        <li><b>兩人的護照影本</b>（掃描或照片）<span class="chip doc">文件明載</span><a class="src" href="#doc-email-e1">✉1</a></li>
+        <li><b>要不要出席 10/26 紅毯與開幕典禮、10/29 TIFFCOM Taiwan Night</b>：大會列為選擇性或視行程而定，沒有給回覆期限<span class="chip doc">文件明載</span><a class="src" href="#doc-email-e1">✉1</a></li>
+        <li><b>Guest ID 問卷</b>：填寫狀態未載；隨行團隊超過 8 張證件要付費，人數要先算<span class="chip doc">文件明載</span><a class="src" href="#doc-email-e1">✉1</a></li>
+      </ul>
+    </div>
+    <div class="panel">
+      <h5>大會信中未提，要問才會有答案</h5>
+      <ul>
+        <li>三場放映的日期、場地，以及 Q&amp;A 是哪一場：大會寫 9 月中定案<a class="src" href="#doc-email-e1">✉1</a></li>
+        <li>第二位主演若自費同行，證件與住宿怎麼算</li>
+        <li>隨行團隊（經紀人、造型、公關）的住宿、接送與證件</li>
+        <li>口譯與 Q&amp;A 使用語言</li>
+        <li>影展期間的媒體與宣傳安排：Leo 為對口，大會尚未提出</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="roles">
+  <h2><span class="no">06</span>角色分工</h2>
+  <p class="sub">依林翰 9/10 回信整理。<a class="src" href="#doc-email-e1">出處：信件 ✉1</a></p>
+  <div class="tblwrap">
+    <table>
+      <thead><tr><th>誰</th><th>角色</th><th>現在手上的事</th></tr></thead>
+      <tbody>
+        <tr class="key"><td>張林翰</td><td><span class="chip owner producer">製片</span> Bering Pictures</td><td>大會信件第一收件人；9/10 把來賓資料交給 Anli、公關媒體交給 Leo</td></tr>
+        <tr><td>Clifford Miu</td><td><span class="chip owner producer">製片</span> Bering Pictures</td><td>列於大會信件的副本收件人</td></tr>
+        <tr class="key"><td>Anli Lin</td><td><span class="chip owner marketing">行銷</span></td><td><b>來賓資料對口</b>：主演人選、可到場日期、出發機場、護照影本、問卷，<b>9/13 前回覆大會</b>，見<a href="#asks">05 待確認清單</a></td></tr>
+        <tr><td>Leo Wang 王豪</td><td><span class="chip owner pr">公關</span></td><td>公關與媒體事務對口</td></tr>
+        <tr><td>阮鳳儀</td><td><span class="chip owner director">導演</span></td><td>受邀人；可到場日期與檔期限制由她確認</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="contacts">
+  <h2><span class="no">07</span>聯絡窗口速查</h2>
+  <p class="sub">點 Email 會直接複製到剪貼簿。大會 9/9 的信收件人有四位大會人員，回信時全部保留。</p>
+  <div class="tblwrap">
+    <table class="contact">
+      <thead><tr><th>窗口</th><th>身分</th><th>聯絡方式</th></tr></thead>
+      <tbody>
+        <tr class="key"><td>Yoko Kiriishi 切石陽子</td><td>東京影展 ·<b>來賓招待窗口</b>（旅行安排、官方活動）</td><td><a href="mailto:kiriishi.yoko@tiff-jp.net">kiriishi.yoko@tiff-jp.net</a></td></tr>
+        <tr class="key"><td>Kumiko Yasuda</td><td>東京影展 ·<b>素材與 DCP 窗口</b>；介紹 Yoko 接手的人</td><td><a href="mailto:yasuda.kumiko@tiff-jp.net">yasuda.kumiko@tiff-jp.net</a></td></tr>
+        <tr><td>三橋恵 Megumi Mitsuhashi</td><td>東京影展 · 副本收件</td><td><a href="mailto:mitsuhashi.megumi@tiff-jp.net">mitsuhashi.megumi@tiff-jp.net</a></td></tr>
+        <tr><td>池田倫子 Tomoko Ikeda</td><td>東京影展 · 副本收件</td><td><a href="mailto:ikeda.tomoko@tiff-jp.net">ikeda.tomoko@tiff-jp.net</a></td></tr>
+        <tr><td>張林翰</td><td>製片 · 團隊主聯絡人</td><td><a href="mailto:linhan@beringpictures.com">linhan@beringpictures.com</a> · [US] +1 917-254-7576</td></tr>
+        <tr><td>Clifford Miu</td><td>製片</td><td><a href="mailto:clifford@beringpictures.com">clifford@beringpictures.com</a></td></tr>
+        <tr><td>Anli Lin</td><td>行銷 · 來賓資料對口</td><td><a href="mailto:angelicaaa.lin@gmail.com">angelicaaa.lin@gmail.com</a></td></tr>
+        <tr><td>Leo Wang 王豪</td><td>公關媒體對口</td><td><a href="mailto:leo.wh95@gmail.com">leo.wh95@gmail.com</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="note">大會官網 <a href="https://2026.tiff-jp.net/en/" target="_blank" rel="noopener">2026.tiff-jp.net/en</a> · TIFFCOM <a href="https://tiffcom.jp/en/" target="_blank" rel="noopener">tiffcom.jp/en</a> · 旅館 <a href="https://www.royalparkhotels.co.jp/en/the/ginza6/" target="_blank" rel="noopener">The Royal Park Hotel Ginza 6-chome</a><a class="src" href="#doc-email-e1">✉1</a></p>
+</section>
+
+<section id="docs">
+  <h2><span class="no">08</span>原文文件</h2>
+  <p class="sub">大會信件照錄（英文原文）。同一個主旨的來回收在同一個 ✉ 底下，一封一段；轉寄帶進來、沒有單獨進本信箱的信，各展成一段並標明引文層。指南各處的「出處」小標籤點了會跳到對應段落。上方搜尋框可直接搜原文。</p>
+
+  <details class="doc" id="doc-email">
+    <summary>與東京影展信件往來<span class="docmeta">轉寄信 · ✉1</span><span class="arrow">›</span></summary>
+    <div class="body">
+      <div class="docpage" id="doc-email-e1">
+        <div class="pgno">✉ 1 · 2026-09-09 · 主旨：Fwd: Guest Invitation【Happily Ever After】Tokyo IFF / World Focus · 本串正本見 mail-raw/（依 msgid 對照）</div>
+        <p><b>Linhan Zhang &lt;linhan@beringpictures.com&gt; · 2026-09-09</b>　msgid:1a08771b25bc6706 · 正本：2026-09-09_1a08771b25bc6706.txt</p>
+        <p>Best, Anli</p>
+        <p>---------- Forwarded message --------- 寄件者： Linhan Zhang &lt;linhan@beringpictures.com&gt; Date: 2026年9月10日週四 上午12:16 Subject: Re: Guest Invitation【Happily Ever After】Tokyo IFF / World Focus To: 切石陽子 &lt;kiriishi.yoko@tiff-jp.net&gt;, Anli Lin &lt;angelicaaa.lin@gmail.com&gt; Cc: Kumiko Yasuda &lt;yasuda.kumiko@tiff-jp.net&gt;, Clifford Miu &lt; clifford@beringpictures.com&gt;, 三橋恵 &lt;mitsuhashi.megumi@tiff-jp.net&gt;, 池田倫子 &lt; ikeda.tomoko@tiff-jp.net&gt;, 王豪Leo &lt;leo.wh95@gmail.com&gt;</p>
+        <p>Hi Yoko,</p>
+        <p>Pleased to e-meet you! Thank you for starting the conversation on the guests and invitation details. I would like to introduce our colleagues, Anli Lin, and Leo Wang, both cc'd in this email.</p>
+        <p>Anli will have most of the guest details that you request. Leo will pay attention to PR and media related topics.</p>
+        <p>We will revert back with answers.</p>
+        <p>Kind regards, --</p>
+        <p>Linhan Zhang | 張林翰 Co-Founder, Bering Pictures | 聯合創始人 - 白令電影公司 Forbes 30 Under 30 Asia 2021 &lt;https://www.forbes.com/profile/bering-pictures/?list0under30-asia-the-arts&gt; linhan@beringpictures.com [US] +1 917-254-7576 &lt;(917)%20254-7576&gt;</p>
+        <p>On Wed, Sep 9, 2026 at 11:58 AM 切石陽子 &lt;kiriishi.yoko@tiff-jp.net&gt; wrote:</p>
+        <p><b>On Wed, Sep 9, 2026 at 11:58 AM 切石陽子 &lt;kiriishi.yoko@tiff-jp.net&gt; · 引文層 1</b>　msgid:1a08771b25bc6706 · 正本：2026-09-09_1a08771b25bc6706.txt（轉寄內的引文，該信沒有單獨進本信箱）</p>
+        <p>Dear Linhan,</p>
+        <p>We are delighted to invite Director Feng-i Fiona Roan and one of the leading actors to present the film “Happily Ever After” at the 39th Tokyo International Film Festival. My name is Yoko, and I will be your contact for travel arrangements and official events during the Festival. It is my pleasure to support the *Happily Ever After* team, and I look forward to working with you all.</p>
+        <p>In principle, TIFF will cover airfare and accommodation for the director and the actor.</p>
+        <p>*Invitation Summary*</p>
+        <p>- Director: Round-trip economy airfare / 4 nights’ accommodation / airport transfers - Actor: Round-trip economy airfare / 4 nights’ accommodation / airport transfers</p>
+        <p>**We would like to consult with you on which actor, Shuhua Yeh or Xuan Chen, should be invited. * - Hotel: The Royal Park Hotel Ginza 6-chome &lt;https://www.royalparkhotels.co.jp/en/the/ginza6/&gt; (10-15 min walk to venues) Room Type: Standard Double (subject to change)</p>
+        <p>We kindly ask you to provide the following at your earliest convenience:</p>
+        <p>- Availability during the festival period (Oct 26 - Nov 4) - Departure airport for both the director and the actor - Passport copies of the director and the actor (scan or photo)</p>
+        <p>The final screening schedule will be confirmed in mid-September, so please let us know about any schedule restrictions *by September 13th*.</p>
+        <p>*Official Events Summary*</p>
+        <p>- Screenings &amp; Q&amp;A Sessions *(to be arranged based on your itinerary)*: There will be three official screenings of the film, one of which will be followed by a Q&amp;A session. We would be most grateful if both the director and the actor could attend the Q&amp;A session. - TIFFCOM “Taiwan Night” on *October 29*: TIFFCOM &lt;https://tiffcom.jp/en/&gt; (Oct 28-30) will host an event called "Taiwan Night" on the evening of the 29th. The *Happily Ever After* team would be very welcome to attend, should the schedule permit.</p>
+        <p>*Optional Events*</p>
+        <p>- Red Carpet Event and Opening Ceremony on *October 26*: The Red Carpet Event will take place only at the Opening Ceremony</p>
+        <p>*Questionnaire*</p>
+        <p>Please complete our short questionnaire via the link below in order for us to issue Guest ID badges. This is primarily intended for the invited director and actors; however, we can issue up to 8 ID badges per team. Please note that *from the 9th badge onward, a fee of 6,000JPY (approx. 38 USD) will be charged*.</p>
+        <p>*Questionnaire Link: https://forms.gle/PgS4LEZubrtpMRD87 &lt;https://forms.gle/PgS4LEZubrtpMRD87&gt;*</p>
+        <p>For general information, please visit the TIFF official website &lt;https://2026.tiff-jp.net/en/&gt;. If you have any questions, please don't hesitate to reach out to us at any time.</p>
+        <p>*Please note that by participating in the Tokyo International Film Festival, you agree that images and recordings (including archive footage, interviews, still images, and videos in which you may appear) may be published on the festival's official website, online video streaming services, various publicity media, and on monitors or signage at the festival venue and related institutions. These materials may also be used for future promotional activities related to the festival.</p>
+        <p>Warmest regards from Tokyo, Yoko</p>
+        <p>･････････････････････････ YOKO KIRIISHI Tokyo International Film Festival Email: kiriishi.yoko@tiff-jp.net https://2026.tiff-jp.net/en/</p>
+        <p>2026年9月9日(水) 5:56 Kumiko Yasuda &lt;yasuda.kumiko@tiff-jp.net&gt;:</p>
+        <p><b>2026年9月9日(水) 5:56 Kumiko Yasuda &lt;yasuda.kumiko@tiff-jp.net&gt; · 引文層 2</b>　msgid:1a08771b25bc6706 · 正本：2026-09-09_1a08771b25bc6706.txt（轉寄內的引文，該信沒有單獨進本信箱）</p>
+        <p>Dear Linhan,</p>
+        <p>While preparing materials including the DCP, we would like to start arranging guests' travel. I wold like to introduce my colleague, *Yoko KIRIISHI *(ms.) who is in charge of guest hospitality services. (cc’d on this message)</p>
+        <p>She will be in touch with you shortly with information regarding guest's travel arrangements, as well as other details related to her stay in Tokyo.</p>
+        <p>We would appreciate it if you could wait for her message and cooperate with her on the arrangements.</p>
+        <p>Thank you.</p>
+        <p>Best regards,</p>
+        <p>Kumiko</p>
+      </div>
+    </div>
+  </details>
+</section>
+
+<footer>
+  整理自與東京影展大會往來信件 ✉1（Kumiko Yasuda、Yoko Kiriishi，2026/9/9）與林翰回信（2026/9/10）。所有期限與規格以大會後續書面確認為準。製表 2026/9/10，內容截至 2026/9/10。
+</footer>
+
+</div>
+
+<div id="toast" role="status"></div>
+<script>
+/* ---------- horizontal-scroll tables: edge shadows + swipe hint ---------- */
+(function(){
+  var updates=[];
+  function init(){
+    document.querySelectorAll('.tblwrap').forEach(function(w){
+      if(w.parentElement && w.parentElement.classList.contains('tshell')) return;
+      var shell=document.createElement('div'); shell.className='tshell';
+      w.parentNode.insertBefore(shell,w); shell.appendChild(w);
+      var hint=null, dismissed=false;
+      function showHint(){
+        if(hint) return;
+        hint=document.createElement('span');
+        hint.className='scrollhint'; hint.textContent='← 滑動看更多';
+        shell.appendChild(hint);
+      }
+      function hideHint(){ if(hint){ hint.remove(); hint=null; } }
+      function update(){
+        var canScroll=w.scrollWidth>w.clientWidth+2;
+        var atStart=w.scrollLeft<4;
+        var atEnd=w.scrollLeft+w.clientWidth>=w.scrollWidth-4;
+        shell.classList.toggle('more-right',canScroll&&!atEnd);
+        shell.classList.toggle('more-left',canScroll&&!atStart);
+        if(canScroll && !dismissed){ showHint(); } else { hideHint(); }
+      }
+      w.addEventListener('scroll',function(){
+        if(w.scrollLeft>12) dismissed=true;
+        update();
+      },{passive:true});
+      if('IntersectionObserver' in window){
+        new IntersectionObserver(function(entries){
+          entries.forEach(function(en){
+            if(en.isIntersecting){ dismissed=false; update(); }
+            else{ hideHint(); }
+          });
+        },{threshold:0.25}).observe(shell);
+      }
+      updates.push(update);
+      update();
+    });
+  }
+  function refresh(){ updates.forEach(function(f){f()}) }
+  window.addEventListener('resize',refresh);
+  document.addEventListener('toggle',function(){ setTimeout(refresh,50) },true);
+  if(document.readyState==='loading'){ document.addEventListener('DOMContentLoaded',init); }
+  else{ init(); }
+  window.addEventListener('load',refresh);
+})();
+</script>
+<script>
+/* ---------- toast ---------- */
+var _toastT;
+function toast(msg){
+  var el=document.getElementById('toast');
+  el.textContent=msg; el.classList.add('on');
+  clearTimeout(_toastT); _toastT=setTimeout(function(){el.classList.remove('on')},2400);
+}
+
+/* ---------- email click = copy, not open ---------- */
+document.addEventListener('click',function(e){
+  var c=e.target.closest('[data-copy]');
+  if(c){
+    var v=c.getAttribute('data-copy');
+    function ok(){toast('已複製存取碼：'+v)}
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(v).then(ok,function(){fallbackCopy(v);ok()});
+    }else{ fallbackCopy(v); ok(); }
+    return;
+  }
+  var a=e.target.closest('a[href^="mailto:"]');
+  if(!a) return;
+  e.preventDefault();
+  var email=a.getAttribute('href').slice(7).split('?')[0];
+  function done(){toast('已複製 Email：'+email+'（到 Gmail 貼上即可）')}
+  if(navigator.clipboard && navigator.clipboard.writeText){
+    navigator.clipboard.writeText(email).then(done,function(){fallbackCopy(email);done()});
+  }else{ fallbackCopy(email); done(); }
+});
+function fallbackCopy(t){
+  var ta=document.createElement('textarea');
+  ta.value=t; ta.style.position='fixed'; ta.style.opacity='0';
+  document.body.appendChild(ta); ta.select();
+  try{document.execCommand('copy')}catch(e){}
+  document.body.removeChild(ta);
+}
+
+/* ---------- anchor jumps open collapsed sections ---------- */
+function revealEl(el){
+  if(!el) return;
+  var p=el;
+  while(p){ if(p.tagName==='DETAILS') p.open=true; p=p.parentElement; }
+  el.scrollIntoView({block:'start'});
+  if(el.classList.contains('docpage')||el.closest('.doc')||el.tagName==='DETAILS'){
+    el.classList.remove('flash'); void el.offsetWidth; el.classList.add('flash');
+    setTimeout(function(){el.classList.remove('flash')},2000);
+  }
+}
+document.addEventListener('click',function(e){
+  var a=e.target.closest('a[href^="#"]');
+  if(!a) return;
+  var id=a.getAttribute('href').slice(1);
+  var el=document.getElementById(id);
+  if(!el) return;
+  e.preventDefault();
+  revealEl(el);
+  try{history.pushState(null,'','#'+id)}catch(err){}
+});
+window.addEventListener('load',function(){
+  if(location.hash) revealEl(document.getElementById(location.hash.slice(1)));
+});
+
+/* ---------- site-wide search ---------- */
+(function(){
+  var input=document.getElementById('q'), box=document.getElementById('results');
+  if(!input) return;
+  var idx=null;
+  function buildIndex(){
+    idx=[];
+    var sel='#timeline .tl .t, #invite td, #invite .note, #form li, #form .note, #operations td, .body p, .body li, .panel li, .callout, .contact td, .alert, .docpage p, .docpage li, #roles td';
+    document.querySelectorAll(sel).forEach(function(el){
+      var t=el.textContent.replace(/\s+/g,' ').trim();
+      if(t.length>3) idx.push({el:el, text:t, low:t.toLowerCase()});
+    });
+  }
+  function labelFor(el){
+    var doc=el.closest('.doc');
+    if(doc){
+      var s=doc.querySelector('summary');
+      return '原文文件 · '+(s?s.childNodes[0].textContent.trim():'');
+    }
+    var parts=[], sec=el.closest('section');
+    if(sec){ var h=sec.querySelector('h2'); if(h) parts.push(h.textContent.replace(/^\s*\d+\s*/,'').trim()); }
+    var det=el.closest('details');
+    if(det){ var s2=det.querySelector('summary'); if(s2) parts.push(s2.textContent.replace(/›/g,'').replace(/\s+/g,' ').trim().slice(0,24)); }
+    return parts.join(' · ')||'指南';
+  }
+  function render(q){
+    if(!idx) buildIndex();
+    var ql=q.toLowerCase();
+    var hits=[];
+    for(var i=0;i<idx.length && hits.length<15;i++){
+      var pos=idx[i].low.indexOf(ql);
+      if(pos>-1) hits.push({item:idx[i],pos:pos});
+    }
+    box.innerHTML='';
+    if(!hits.length){
+      box.innerHTML='<div class="rescount">找不到「'+q.replace(/</g,'&lt;')+'」，換個關鍵字試試（可搜中文或英文原文）</div>';
+      box.classList.add('on'); return;
+    }
+    var cnt=document.createElement('div'); cnt.className='rescount';
+    cnt.textContent=hits.length+' 筆結果（點擊跳至該段）';
+    box.appendChild(cnt);
+    hits.forEach(function(h){
+      var b=document.createElement('button'); b.type='button'; b.className='res';
+      var w=document.createElement('div'); w.className='where'; w.textContent=labelFor(h.item.el);
+      var s=document.createElement('div');
+      var t=h.item.text, from=Math.max(0,h.pos-26), to=Math.min(t.length,h.pos+q.length+46);
+      if(from>0) s.appendChild(document.createTextNode('…'));
+      s.appendChild(document.createTextNode(t.slice(from,h.pos)));
+      var m=document.createElement('mark'); m.textContent=t.slice(h.pos,h.pos+q.length); s.appendChild(m);
+      s.appendChild(document.createTextNode(t.slice(h.pos+q.length,to)+(to<t.length?'…':'')));
+      b.appendChild(w); b.appendChild(s);
+      b.addEventListener('click',function(){ hide(); revealEl(h.item.el); h.item.el.classList.add('flash'); setTimeout(function(){h.item.el.classList.remove('flash')},2000); });
+      box.appendChild(b);
+    });
+    box.classList.add('on');
+  }
+  function hide(){ box.classList.remove('on'); }
+  var deb;
+  input.addEventListener('input',function(){
+    clearTimeout(deb);
+    var q=input.value.trim();
+    var isAscii=/^[\x00-\x7F]*$/.test(q);
+    if(!q || (isAscii && q.length<2)){ hide(); return; }
+    deb=setTimeout(function(){render(q)},120);
+  });
+  input.addEventListener('keydown',function(e){
+    if(e.key==='Escape'){ hide(); input.blur(); }
+    if(e.key==='Enter'){ var f=box.querySelector('.res'); if(f) f.click(); }
+  });
+  document.addEventListener('click',function(e){
+    if(!e.target.closest('.searchwrap') && !e.target.closest('#results')) hide();
+  });
+})();
+
+(function(){
+  var btn=document.getElementById('menubtn'), nav=document.querySelector('nav');
+  if(!btn) return;
+  function set(open){
+    nav.classList.toggle('menu-open',open);
+    btn.setAttribute('aria-expanded',open?'true':'false');
+  }
+  btn.addEventListener('click',function(e){
+    e.stopPropagation();
+    set(!nav.classList.contains('menu-open'));
+  });
+  document.addEventListener('click',function(e){
+    if(e.target.closest('.navlinks a')){ set(false); return; }
+    if(!e.target.closest('nav')) set(false);
+  });
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape') set(false);
+  });
+})();
+(function(){
+  var nav=document.querySelector('nav');
+  function syncNav(){
+    document.documentElement.style.setProperty('--navh', nav.offsetHeight+'px');
+  }
+  syncNav();
+  window.addEventListener('resize', syncNav);
+})();
+(function(){
+  var KEY='tokyo2026-checklist';
+  var saved={};
+  try{ saved=JSON.parse(localStorage.getItem(KEY)||'{}'); }catch(e){}
+  document.querySelectorAll('li[data-k]').forEach(function(li){
+    var k=li.dataset.k, box=li.querySelector('input[type=checkbox]');
+    if(!box) return;
+    if(saved[k]){ box.checked=true; li.classList.add('done'); }
+    box.addEventListener('change',function(){
+      li.classList.toggle('done', box.checked);
+      saved[k]=box.checked;
+      try{ localStorage.setItem(KEY, JSON.stringify(saved)); }catch(e){}
+    });
+  });
+})();
+
+</script>
+
+<!--mv-pagecount v1-->
+<script>(function(){try{var K="mv_device_id",i=localStorage.getItem(K);if(!i){i=(window.crypto&&crypto.randomUUID)?crypto.randomUUID():String(Date.now())+Math.random().toString(36).slice(2);localStorage.setItem(K,i);}var u="https://mv-count.tatujinx.workers.dev/hit?p=TOKYO26_GD&d="+encodeURIComponent(i);if(navigator.sendBeacon){navigator.sendBeacon(u);}else{fetch(u,{mode:"no-cors",keepalive:true});}}catch(e){}})();</script>
+</body>
+</html>
